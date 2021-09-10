@@ -1,0 +1,60 @@
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    animation: SlideInFromRight ease-in 1s;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+    padding: 10px 0;
+    animation: SlideInFromLeft ease-in 1s;
+}
+
+aside#sidebar2{
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+    animation: SlideInFromLeft ease-in 1s;
+}
+
+article#main-col2{
+    float: right;
+    width: 65%;
+    padding: 10px 0;
+    animation: SlideInFromRight ease-in 1s;
+}
+@keyframes SlideInFromLeft{
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes SlideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
